@@ -13,7 +13,7 @@ selected = option_menu(
         )
         
 if (selected=="Home"):
-    st.header("Welcone to Butler.ai!")
+    st.header("Welcome to Butler.ai!")
     st.write('''
     Are you tired of spending hours searching for answers online? Do you have a lot of content that you need to be summarized or paraphrased? Look no further than Butler.ai!
     ''')
