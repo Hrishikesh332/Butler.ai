@@ -79,10 +79,10 @@ if (selected=="Wizard Summarizer"):
             presence_penalty=0
         )
         print(response)
-        return response.choices[0].text.replace('\n', '')
-   # if statement and button1:
-   #         summary = response.choices[0].text.replace('\n', '')
-
+        return response.choices[0].text
+    if statement and button1:
+           summary = response2(summ)
+           st.write(summary)
     
 
 if (selected=="Reimaginator"):
