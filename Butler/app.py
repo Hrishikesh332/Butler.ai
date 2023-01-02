@@ -64,7 +64,7 @@ if (selected=="Wizard Summarizer"):
     st.write("Are you bored of reading a long text and wanted to cover long text in a short time or wanted to summarize the long text in the best way. Here, Bulter.ai provides you the wand and the wizard summarizer to help you out.")
     st.caption("Add your long text in the box below! and click the apply spell button")
 
-statement=st.text_area("Add your content below!!!")
+    statement=st.text_area("Add your content below!!!")
     button1=st.button("Summarize")
     def response2(summ):
         openai.api_key = st.secrets["Api"]
