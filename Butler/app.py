@@ -105,8 +105,8 @@ if (selected=="Reimaginator"):
         )
         print(response)
         return response.choices[0].text
-    if statement and button2:
+    if statement1 and button2:
            reimagine = response2(statement1)
-           st.write(summary)
+           st.write(reimagine)
     
 
