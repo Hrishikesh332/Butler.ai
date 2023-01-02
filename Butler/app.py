@@ -90,7 +90,7 @@ if (selected=="Reimaginator"):
     st.write("Reimaginator helps you to convey your thoughts in a clear and concise manner by rephrasing your text. The Reimaginator provides you the new perspective to view the text and helps you to be expressive in a correct way.")
     st.caption("Add your text here to rephrase it, and click Reimagine!!!")
     statement1=st.text_area("Add your content below!!!")
-    button2=st.button("Summarize")
+    button2=st.button("Paraphrase It")
     def response3(statement1):
         openai.api_key = st.secrets["Api"]
 
