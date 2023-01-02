@@ -66,7 +66,7 @@ if (selected=="Wizard Summarizer"):
 
     statement=st.text_area("Add your content below!!!")
     button1=st.button("Summarize")
-    def response2(summ):
+    def response2(statement):
         openai.api_key = st.secrets["Api"]
 
         response = openai.Completion.create(
@@ -81,7 +81,7 @@ if (selected=="Wizard Summarizer"):
         print(response)
         return response.choices[0].text
     if statement and button1:
-           summary = response2(summ)
+           summary = response2(statement)
            st.write(summary)
     
 
