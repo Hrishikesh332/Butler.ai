@@ -81,8 +81,8 @@ if (selected=="Wizard Summarizer"):
         print(response)
         return response.choices[0].text
     if statement and button1:
-        reply=response2(statement)
-        st.write(reply)
+            summary = response.choices[0].text.replace('\n', '')
+
     
 
 if (selected=="Reimaginator"):
