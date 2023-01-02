@@ -65,8 +65,8 @@ if (selected=="Wizard Summarizer"):
     st.caption("Add your long text in the box below! and click the apply spell button")
 
 statement=st.text_area("Add your content below!!!")
-    button=st.button("Summarize")
-    def response1(summ):
+    button1=st.button("Summarize")
+    def response2(summ):
         openai.api_key = st.secrets["Api"]
 
         response = openai.Completion.create(
@@ -80,8 +80,8 @@ statement=st.text_area("Add your content below!!!")
         )
         print(response)
         return response.choices[0].text
-    if statement and button:
-        reply=response1(statement)
+    if statement and button1:
+        reply=response2(statement)
         st.write(reply)
     
 
