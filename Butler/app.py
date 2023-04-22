@@ -5,8 +5,8 @@ from streamlit_option_menu import option_menu
 
 selected = option_menu(
             menu_title=None,  
-            options=["Home", "Intellichat", "Quick Caption", "Wizard Summarizer", "Reimaginator"],  
-            icons=["house-door", "chat-left-dots", "camera-video", "card-text", "input-cursor-text"],  
+            options=["Home", "Intellichat", "Wizard Summarizer", "Reimaginator"],  
+            icons=["house-door", "chat-left-dots", "card-text", "input-cursor-text"],  
             menu_icon="cast",  
             default_index=0,  
             orientation="horizontal",
